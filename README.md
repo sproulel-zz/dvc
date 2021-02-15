@@ -27,7 +27,17 @@ git commit -m "Add raw data"
 git clone https://github.com/iterative/example-versioning.git
 dvc get https://github.com/iterative/dataset-registry \
           tutorial/ver/data.zip
+```
+#### check track files
+```
+dvc list $(git remote get-url origin)
+```
+```
+python -m virtualenv -p /usr/bin/python3.6 .env
+pip install -r requirements.txt
 unzip data.zip
+# python train.py
+# output model.h5
 dvc add model.h5
 ```
 
