@@ -22,6 +22,17 @@ git add data/.gitignore data/data.xml.dvc
 git commit -m "Add raw data"
 ```
 
+## also how you can track a model
+```
+git clone https://github.com/iterative/example-versioning.git
+dvc get https://github.com/iterative/dataset-registry \
+          tutorial/ver/data.zip
+unzip data.zip
+dvc add model.h5
+```
+
+
+
 # add a directory
 ## download data
 ```
@@ -106,4 +117,10 @@ rm -rf datadir
 
 ```
 dvc pull -v
+```
+
+# pipelines
+
+```
+dvc run
 ```
