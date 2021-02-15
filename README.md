@@ -11,7 +11,7 @@ dvc status
 
 # get data
 ```
-dvc get https://github.com/iterative/dataset-registry 
+dvc get https://github.com/iterative/dataset-registry \ 
           get-started/data.xml -o data/data.xml
 ```
 
